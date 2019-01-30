@@ -1,28 +1,23 @@
-<h1 align="center"> ENVDOTJSON </h1>
+# ENVDOTJSON
 
-<p align="center"> Load environment variables for different environment stages </p>
+ENVDOTJSON is a module loads environment variable from a single `json` file into `process.env`.</p>
+Note: this module cannot be used in the browser.
 
-<hr/>
-
-<p>ENVDOTJSON is a module loads environment variable from a single <code>json</code> file into <code>process.env</code>.</p>
-
-<p>Note: this module cannot be used in the browser.<p>
-
-<h3> Installation </h3>
+### Installation
 
 ```shell
 $ npm i envdotjson
 ```
 
-<h3> Usage </h3>
+### Usage
 
-<p> Require <code>envdotjson</code> as early as possible in your app, and load the environment variables </p>
+Require `envdotjson` as early as possible in your app, and load the environment variables
 
 ```js
 require('envdotjson').load();
 ```
 
-<p> Create a <code>env.json</code> file in your root directory, with the following format</p>
+Create a `env.json` file in your root directory, with the following format
 
 ```json
 {
@@ -33,9 +28,9 @@ require('envdotjson').load();
 }
 ```
 
-<p> NOTE:  variables in <code>default</code> will gets loaded in any environment stages  </p>
+NOTE:  variables in `default` will gets loaded in any environment stages
 
-<p> BUT, you can overwrite it in any environment stage </p>
+BUT, you can overwrite it in any environment stage
 
 ```json
 {
@@ -49,14 +44,14 @@ require('envdotjson').load();
 }
 ```
 
-<p> In order to get <code>process.env.DB_NAME === "user-test"</code>, you need to set the <code>NODE_ENV=tst</code> first, for example:
+In order to get `process.env.DB_NAME === "user-test"`, you need to set the `NODE_ENV=tst` first, for example:
 
 ```shell
 $ NODE_ENV=tst node index.js
 ```
 
-<strong> set the <code>NODE_ENV</code> in your <code>env.json</code> file will not work.</strong>
+**set the `NODE_ENV` in your `env.json` file will not work.**
 
-<h3> License </h3>
+### License
 
-This project is licensed under the MIT License
+MIT

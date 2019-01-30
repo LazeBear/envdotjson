@@ -7,6 +7,10 @@
     "test": "mocha ./tests",
     "prepublishOnly": "npm test"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lazebear/envdotjson.git"
+  },
   "keywords": [
     "env",
     "dotenv",
