@@ -1,0 +1,25 @@
+{
+  "name": "envdotjson",
+  "version": "1.0.0",
+  "description": "Loads environment variables from env.json file",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm test"
+  },
+  "keywords": [
+    "env",
+    "dotenv",
+    "process.env",
+    "environment",
+    "config",
+    "configurations",
+    "stages",
+    "loader"
+  ],
+  "author": "Mason Xiong",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
