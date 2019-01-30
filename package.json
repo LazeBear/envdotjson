@@ -1,11 +1,11 @@
 {
   "name": "envdotjson",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Loads environment variables from env.json file",
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha ./tests",
-    "prepublish": "npm test"
+    "prepublishOnly": "npm test"
   },
   "keywords": [
     "env",

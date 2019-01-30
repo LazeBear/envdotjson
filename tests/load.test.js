@@ -21,4 +21,10 @@ describe('test load function', () => {
     assert(process.env.PORT === '4000');
     assert(process.env.NAME === 'tst');
   });
+
+  it('should not load the NODE_ENV', () => {
+    process.env.NODE_ENV = 'tst';
+    envdotjson.load({ path: filePath });
+    assert(process.env.NODE_ENV === 'tst');
+  });
 });
