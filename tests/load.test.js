@@ -27,4 +27,9 @@ describe('test load function', () => {
     envdotjson.load({ path: filePath });
     assert(process.env.NODE_ENV === 'tst');
   });
+
+  it('should not load when file not exist', () => {
+    envdotjson.load();
+    assert(process.env.NODE_ENV === undefined);
+  });
 });
